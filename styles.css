@@ -1,0 +1,109 @@
+:root {
+    --primary: #121212;
+    --secondary: #242424;
+    --resalt: #8C441B;
+    --resalt-light: #8C521F;
+    --resalt-dark: #401A0D;
+
+    --text:#f8f9fa;
+    
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: var(--primary);
+    /* background-image: url('https://jotadev.netlify.app/build/img/bg-paterns.png'); */
+    color: var(--text);
+}
+.logo {
+    font-family: Geneva;
+}
+.navbar{
+    width: 100%; 
+    background-color: var(--secondary);
+
+}
+
+
+
+.footer-info{
+    text-align: center;
+}
+
+.nav-link:hover:before {
+    content:""; 
+    width:50%; 
+    height:2px; 
+    background-color: var(--resalt-light); 
+    display:flex; 
+    position:relative; 
+    top: 25px;
+}
+
+.card{
+    color: var(--primary);
+    padding: 0px;
+}
+
+.subtitle::before {
+    content:""; 
+    width:50%; 
+    height:2px; 
+    background-color: var(--resalt-light); 
+    display:flex; 
+    position:relative; 
+    top: 100%;
+    
+}
+.avatar{
+    border-radius: 10px;
+    object-fit: cover;
+    height: 250px;
+    filter: drop-shadow(0 0 1.0625em var(--primary));
+}
+
+.avatar-container::before {
+    content:""; 
+    width:215px; 
+    height:250px; 
+    background-color: var(--resalt-light); 
+    display:flex; 
+    position:absolute; 
+    z-index: -1;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    /* filter: drop-shadow(0 0 1.0625em var(--resalt-light)); */
+
+}
+
+.box-form{
+    border-radius: 10px;
+    padding: 10px ;
+    /* height: 350px; */
+    text-align: center;
+    /* border: 1px solid var(--resalt-light); */
+    background-color: var(--secondary);
+}
+#contact{
+    justify-content: center;
+}
+
+.skill-img{
+    width: 100px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: var(--secondary);
+    /* height: 10vh; */
+}
+.footer-container{
+    padding: 20px;
+    text-align: center;
+}
